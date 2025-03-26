@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortexia</title>
+    <meta name="description" content="Vortexia 是一个以动态漩涡与星空特效为核心的沉浸式交互网页，通过流动的粒子轨迹、渐变色彩与鼠标互动，带您体验宇宙的神秘与数字艺术的奇幻魅力。">
+    <meta name="keywords" content="Vortexia, 漩涡特效, 星空动画, 交互网页, 动态视觉, HTML/CSS/JavaScript, 鼠标互动, 粒子效果, 科幻主题, 数字艺术">
+    <meta name="author" content="@Chenp">
+    <meta name="theme-color" content="#4285f4">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="oil-painting-overlay"></div>
+    <canvas id="starfield"></canvas>
+    <!-- 添加星云轨迹效果的canvas -->
+    <canvas id="pathNebula"></canvas>
+    <canvas id="clickPulse"></canvas>
+    
+    <!-- 标题文字直接放在页面上，不使用header -->
+    <div class="floating-title">
+        <h1>THE STARRY NIGHT</h1>
+    </div>
+
+    <!-- 添加梵高星空螺旋效果 -->
+    <div class="vangogh-spiral-container">
+        <canvas id="vangoghSpiral"></canvas>
+        <div class="quote-container">
+            <p class="vangogh-quote">"我梦见了一个更加美丽的世界，我梦见了，然后我画了出来。"</p>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">© Made By Chenp</p>
+    </footer>
+
+    <!-- 加载脚本 -->
+    <script src="js/libs/howler.min.js"></script>
+    <script src="js/libs/aframe.min.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/starfield.js"></script>
+    <script src="js/musicTimeline.js"></script>
+    <!-- 移除 arAlbum.js -->
+    <script src="js/app.js"></script>
+    <script src="js/sensors.js"></script>
+    <script src="js/vangoghSpiral.js"></script>
+    <!-- 添加星云轨迹效果的脚本 -->
+    <script src="js/pathNebula.js"></script>
+    <script src="js/clickPulse.js"></script>
+    <script src="service-worker.js"></script>
+
+</body>
+</html>
